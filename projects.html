@@ -46,39 +46,99 @@
     </div>
 
     <main id="main-content">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>My Projects</h1>
+                <p class="hero-subtitle">A showcase of my work in mobile development, web platforms, and delivery systems</p>
+                <p class="hero-description">From privacy-first finance apps to educational platforms and logistics solutions, each project represents a unique challenge and learning experience in building scalable, user-centric applications.</p>
+            </div>
+        </section>
+
+        <!-- PROJECTS SHOWCASE -->
         <section class="container">
-            <h1 style="text-align: center; margin-bottom: 40px;">Projects</h1>
-            
-            <div class="grid grid-3">
-                <a href="trackify.html" class="project-card">
-                    <div class="project-card-image">
-                        <img src="trackify/trackify.svg" alt="Trackify">
-                    </div>
-                    <div class="project-card-content">
-                        <h3>Trackify</h3>
-                        <p>Privacy-first personal finance tracker built with Flutter. Features encrypted local storage, optional Firestore sync, and weekly trend analytics.</p>
-                    </div>
-                </a>
+            <div class="projects-showcase">
+                <!-- FEATURED PROJECT -->
+                <div class="featured-project-card">
+                    <div class="featured-project-content">
+                        <div class="project-category">Featured Project</div>
+                        <h2>Trackify</h2>
+                        <p class="project-description">A comprehensive personal finance tracker built with Flutter, featuring encrypted local storage, optional cloud sync, and beautiful data visualizations.</p>
 
-                <a href="https://falanocollege.com" target="_blank" rel="noopener noreferrer" class="project-card">
-                    <div class="project-card-image" style="background: linear-gradient(135deg, #ffd166 0%, #8ab4f8 100%); font-size: 32px; font-weight: 700;">
-                        FC
-                    </div>
-                    <div class="project-card-content">
-                        <h3>falanocollege.com</h3>
-                        <p>Educational resource portal providing curated study materials: notes, updated syllabi, practice questions and previous years' papers for multiple disciplines.</p>
-                    </div>
-                </a>
+                        <div class="project-tech-stack">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Dart</span>
+                            <span class="tech-tag">Hive</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
 
-                <a href="https://courierdirect.com" target="_blank" rel="noopener noreferrer" class="project-card">
-                    <div class="project-card-image">
-                        📦
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">25.7MB</span>
+                                <span class="stat-label">APK Size</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">Privacy</span>
+                                <span class="stat-label">First Design</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">Encrypted</span>
+                                <span class="stat-label">Local Storage</span>
+                            </div>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="trackify.html" class="btn btn-primary">View Case Study</a>
+                            <a href="trackify-test.apk" download class="btn btn-secondary">Download APK</a>
+                        </div>
                     </div>
-                    <div class="project-card-content">
-                        <h3>CourierDirect</h3>
-                        <p>Delivery management application featuring route optimization, real-time parcel tracking, and comprehensive driver management tools.</p>
+                    <div class="featured-project-image">
+                        <img src="trackify.svg" alt="Trackify app logo">
+                        <div class="project-badge">Available on Android</div>
                     </div>
-                </a>
+                </div>
+
+                <!-- OTHER PROJECTS GRID -->
+                <h2 class="section-title">Other Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <div class="project-header">
+                            <img src="falano.svg" alt="Falanocollege logo" class="project-logo">
+                            <div class="project-category-tag">Web Platform</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>falanocollege.com</h3>
+                            <p>Educational resource portal providing curated study materials, updated syllabi, and practice questions for Science, Management, Humanities, and Law disciplines.</p>
+                            <div class="project-links">
+                                <a href="https://falanocollege.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1l4-4v7l-4-2z"/>
+                                    </svg>
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-header">
+                            <img src="courierdirect.svg" alt="CourierDirect logo" class="project-logo">
+                            <div class="project-category-tag">Web & Mobile</div>
+                        </div>
+                        <div class="project-content">
+                            <h3>CourierDirect</h3>
+                            <p>Full-stack delivery management solution featuring a responsive web platform with custom UI design, route optimization, real-time parcel tracking, and comprehensive driver management tools for efficient logistics operations.</p>
+                            <div class="project-links">
+                                <a href="https://courierdirect.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1l4-4v7l-4-2z"/>
+                                    </svg>
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

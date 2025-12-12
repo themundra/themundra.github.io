@@ -1,0 +1,34 @@
+Transaction Data Deletion for Trackify
+
+Trackify is a personal finance tracking app developed by [Your Developer Name or Company]. If you wish to delete all your transaction data (including payments, deposits, and loans), follow the steps below. This action is permanent and cannot be undone.
+
+Steps to Delete Transaction Data:
+1. Open the Trackify app on your device.
+2. Navigate to the Settings screen (accessible from the main menu or profile section).
+3. Scroll to the "Finance Overview" section.
+4. Tap on "Clear All Transactions".
+5. Read the confirmation dialog carefully, which explains that this will delete all transactions and loans.
+6. Confirm the deletion by tapping "Delete".
+
+What Happens After Deletion:
+- All transaction records (payments, deposits, loans) will be permanently removed from the app and our servers.
+- Your account balance will be reset to zero.
+- This action is immediate and irreversible—no data is retained.
+
+Types of Data Deleted:
+- All transaction records (amounts, categories, dates, notes).
+- All loan records (lends and borrows).
+- Associated balance calculations.
+
+Data Retained:
+- Your user account and profile information (name, email, etc.) remain intact.
+- App settings, currency preferences, and theme choices are preserved.
+- No transaction data is kept after deletion.
+
+Additional Notes:
+- This feature allows you to reset your financial data without deleting your account.
+- If you need to delete your entire account, use the "Delete Account" option in the "Support & About" section.
+- If you encounter issues or need assistance, contact us at [your contact email or support link].
+- This process ensures your data privacy for transaction-specific resets.
+
+Last updated: [Insert Date]

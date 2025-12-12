@@ -46,60 +46,246 @@
     </div>
 
     <main id="main-content">
-        <section class="container">
-            <h1>Trackify Privacy Policy</h1>
-            <p style="color: var(--color-text-muted); margin-bottom: 32px;">Last updated: December 2025</p>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Privacy Policy</h1>
+                <p class="hero-subtitle">Your Privacy Matters to Us</p>
+                <p class="hero-description">Learn how Trackify protects your financial data and respects your privacy. We believe in transparency and giving you control over your personal information.</p>
+                <div class="hero-buttons">
+                    <a href="#privacy-content" class="btn btn-primary">Read Policy</a>
+                    <a href="../contact.html" class="btn btn-ghost">Contact Us</a>
+                </div>
+            </div>
+        </section>
 
-            <h2 style="margin-bottom: 24px;">1. Overview</h2>
-            <p>Trackify is a personal finance application (mobile) that helps users record and visualize incomes, expenses, balances and trends. This Privacy Policy explains what information Trackify collects, how it is used, how it is stored and your choices regarding that information. This policy applies to the Trackify application and any related services provided by the developer.</p>
+        <!-- SECTION DIVIDER -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">🔒</div>
+            <div class="divider-line"></div>
+        </div>
 
-            <h2 style="margin-bottom: 24px;">2. Data We Collect</h2>
-            <ul style="margin-bottom: 24px;">
-                <li><strong>Account &amp; Identity Data:</strong> When you sign in using Firebase Authentication we store your user identifier (UID) and the display name / email provided by the authentication provider. These are used to identify your account and to derive an encryption key for local data.</li>
-                <li><strong>Transaction Data:</strong> Transaction records you create (amount, category, date/time, notes, method, etc.) are stored locally and may be synced to Cloud Firestore if you enable sync. This includes only the transaction fields required for functionality.</li>
-                <li><strong>Device &amp; Usage Data:</strong> Basic app usage and crash data (if enabled) to help debug and improve the app. Trackify does not collect tracking identifiers for advertising purposes.</li>
-            </ul>
+        <!-- PRIVACY POLICY CONTENT -->
+        <section class="container" id="privacy-content">
+            <div class="privacy-showcase">
+                <!-- LAST UPDATED -->
+                <div class="privacy-meta">
+                    <div class="meta-card">
+                        <div class="meta-icon">📅</div>
+                        <div class="meta-content">
+                            <h3>Last Updated</h3>
+                            <p>December 2025</p>
+                        </div>
+                    </div>
+                </div>
 
-            <h2 style="margin-bottom: 24px;">3. How We Store Your Data</h2>
-            <ul style="margin-bottom: 24px;">
-                <li><strong>Local Storage:</strong> Trackify uses an encrypted local store (Hive) to keep transaction and user data on your device for offline access and fast reads.</li>
-                <li><strong>Deterministic Encryption:</strong> Local data is encrypted with AES-256 using a deterministic key derived from the authenticated user&#x27;s UID (SHA-256). This design allows the app to recover and decrypt local data after an app data clear or reinstall provided you re-authenticate with the same account. The raw UID is used only to derive the key and is not stored in plain text insecurely.</li>
-                <li><strong>Remote Storage (optional):</strong> If you enable cloud sync, your encrypted data will be stored in your Firebase project&#x27;s Cloud Firestore.</li>
-            </ul>
+                <!-- OVERVIEW -->
+                <div class="privacy-section">
+                    <div class="section-header">
+                        <div class="section-number">1</div>
+                        <h2>Overview</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>Trackify is a personal finance application (mobile) that helps users record and visualize incomes, expenses, balances and trends. This Privacy Policy explains what information Trackify collects, how it is used, how it is stored and your choices regarding that information. This policy applies to the Trackify application and any related services provided by the developer.</p>
+                    </div>
+                </div>
 
-            <h2 style="margin-bottom: 24px;">4. Why We Use This Data</h2>
-            <ul style="margin-bottom: 24px;">
-                <li>Provide core functionality: to record, display and analyze your finances.</li>
-                <li>Sync: to keep data in sync across devices when using the cloud sync feature.</li>
-                <li>Improve the app: aggregated, non-personally-identifying usage data and crash reports help improve stability and features.</li>
-            </ul>
+                <!-- DATA WE COLLECT -->
+                <div class="privacy-section">
+                    <div class="section-header">
+                        <div class="section-number">2</div>
+                        <h2>Data We Collect</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="data-categories">
+                            <div class="data-category">
+                                <h3>Account & Identity Data</h3>
+                                <p>When you sign in using Firebase Authentication we store your user identifier (UID) and the display name / email provided by the authentication provider. These are used to identify your account and to derive an encryption key for local data.</p>
+                            </div>
+                            <div class="data-category">
+                                <h3>Transaction Data</h3>
+                                <p>Transaction records you create (amount, category, date/time, notes, method, etc.) are stored locally and may be synced to Cloud Firestore if you enable sync. This includes only the transaction fields required for functionality.</p>
+                            </div>
+                            <div class="data-category">
+                                <h3>Device & Usage Data</h3>
+                                <p>Basic app usage and crash data (if enabled) to help debug and improve the app. Trackify does not collect tracking identifiers for advertising purposes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <h2 style="margin-bottom: 24px;">5. Sharing &amp; Third Parties</h2>
-            <p>Trackify does not sell or rent personal information to third parties.</p>
-            <p>We may use third-party services to operate the app (e.g., Firebase for authentication and database, crash-reporting tools). These providers process data solely to provide their services and are governed by their own privacy policies.</p>
-            <p>If you explicitly export data (CSV, backup) or share screenshots, you control that export and any recipients.</p>
+                <!-- HOW WE STORE DATA -->
+                <div class="privacy-section">
+                    <div class="section-header">
+                        <div class="section-number">3</div>
+                        <h2>How We Store Your Data</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="storage-methods">
+                            <div class="storage-method">
+                                <div class="storage-icon">📱</div>
+                                <div class="storage-content">
+                                    <h3>Local Storage</h3>
+                                    <p>Trackify uses an encrypted local store (Hive) to keep transaction and user data on your device for offline access and fast reads.</p>
+                                </div>
+                            </div>
+                            <div class="storage-method">
+                                <div class="storage-icon">🔐</div>
+                                <div class="storage-content">
+                                    <h3>Deterministic Encryption</h3>
+                                    <p>Local data is encrypted with AES-256 using a deterministic key derived from the authenticated user's UID (SHA-256). This design allows the app to recover and decrypt local data after an app data clear or reinstall provided you re-authenticate with the same account.</p>
+                                </div>
+                            </div>
+                            <div class="storage-method">
+                                <div class="storage-icon">☁️</div>
+                                <div class="storage-content">
+                                    <h3>Remote Storage (optional)</h3>
+                                    <p>If you enable cloud sync with an authenticated account, your encrypted data will be stored in your Firebase project's Cloud Firestore as long as you're connected to the internet. Remote storage is not available for guest login users.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <h2 style="margin-bottom: 24px;">6. Security</h2>
-            <p>We use strong encryption (AES-256 via the `encrypt` package) for local data. The deterministic key approach balances user data recoverability with per-user isolation — but like any design, it has trade-offs; keep your account credentials secure.</p>
-            <p>We take reasonable administrative, technical, and physical measures to protect your data, but no system is 100% secure. Be careful with device-level security (PIN/biometrics) and backups.</p>
+                <!-- WHY WE USE DATA -->
+                <div class="privacy-section">
+                    <div class="section-header">
+                        <div class="section-number">4</div>
+                        <h2>Why We Use This Data</h2>
+                    </div>
+                    <div class="section-content">
+                        <ul class="usage-list">
+                            <li>Provide core functionality: to record, display and analyze your finances.</li>
+                            <li>Sync: to keep data in sync across devices when using the cloud sync feature.</li>
+                            <li>Improve the app: aggregated, non-personally-identifying usage data and crash reports help improve stability and features.</li>
+                        </ul>
+                    </div>
+                </div>
 
-            <h2 style="margin-bottom: 24px;">7. Your Choices</h2>
-            <ul style="margin-bottom: 24px;">
-                <li><strong>Sign-in &amp; Deletion:</strong> You can delete your account (and associated remote data) via the app&#x27;s settings if supported; deleting your account does not automatically remove local backups unless the app provides that flow. Check settings for account deletion and local data wipe options.</li>
-                <li><strong>Cloud Sync:</strong> You can opt-in or opt-out of cloud sync in the app settings. If you opt out, your data remains local only.</li>
-                <li><strong>Export:</strong> You can export your transaction data manually; exports are not automatically shared.</li>
-            </ul>
+                <!-- SHARING & THIRD PARTIES -->
+                <div class="privacy-section">
+                    <div class="section-header">
+                        <div class="section-number">5</div>
+                        <h2>Sharing & Third Parties</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="sharing-info">
+                            <div class="sharing-item">
+                                <h3>Our Commitment</h3>
+                                <p>Trackify does not sell or rent personal information to third parties.</p>
+                            </div>
+                            <div class="sharing-item">
+                                <h3>Third-Party Services</h3>
+                                <p>We may use third-party services to operate the app (e.g., Firebase for authentication and database, crash-reporting tools). These providers process data solely to provide their services and are governed by their own privacy policies.</p>
+                            </div>
+                            <div class="sharing-item">
+                                <h3>Your Control</h3>
+                                <p>You can share screenshots of your data. CSV and backup export features are not available as of now. When export features become available, you will control that export and any recipients.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <h2 style="margin-bottom: 24px;">8. Children</h2>
-            <p>Trackify is not intended for children under 13. We do not knowingly collect personal information from children under 13.</p>
+                <!-- SECURITY -->
+                <div class="privacy-section">
+                    <div class="section-header">
+                        <div class="section-number">6</div>
+                        <h2>Security</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="security-measures">
+                            <div class="security-item">
+                                <div class="security-icon">🛡️</div>
+                                <div class="security-content">
+                                    <h3>Strong Encryption</h3>
+                                    <p>We use strong encryption (AES-256 via the `encrypt` package) for both local and remote data. The deterministic key approach balances user data recoverability with per-user isolation.</p>
+                                </div>
+                            </div>
+                            <div class="security-item">
+                                <div class="security-icon">🔒</div>
+                                <div class="security-content">
+                                    <h3>Protection Measures</h3>
+                                    <p>We take reasonable administrative, technical, and physical measures to protect your data, but no system is 100% secure. Be careful with device-level security (PIN/biometrics) and backups.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <h2 style="margin-bottom: 24px;">9. Changes to This Policy</h2>
-            <p>We may update this policy to reflect changes in our practices or legal requirements. If material changes are made, we will update the "Last updated" date in this document.</p>
+                <!-- YOUR CHOICES -->
+                <div class="privacy-section">
+                    <div class="section-header">
+                        <div class="section-number">7</div>
+                        <h2>Your Choices</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="choices-grid">
+                            <div class="choice-item">
+                                <h3>Sign-in & Deletion</h3>
+                                <p>You can delete your account (and associated remote data) via the app's settings if supported; deleting your account does not automatically remove local backups unless the app provides that flow.</p>
+                            </div>
+                            <div class="choice-item">
+                                <h3>Cloud Sync</h3>
+                                <p>For authenticated users, cloud sync happens automatically when connected to the internet. Guest login users do not have access to cloud sync and their data remains local only.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <h2 style="margin-bottom: 24px;">10. Contact</h2>
-            <p>If you have questions about this privacy policy or want to request data deletion, contact: <a href="mailto:mahesamun@gmail.com">mahesamun@gmail.com</a></p>
+                <!-- CHILDREN -->
+                <div class="privacy-section">
+                    <div class="section-header">
+                        <div class="section-number">8</div>
+                        <h2>Children</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>Trackify is not intended for children under 13. We do not knowingly collect personal information from children under 13.</p>
+                    </div>
+                </div>
 
-            <p style="text-align: center; margin-top: 32px;"><a href="../trackify.html" class="btn btn-ghost">Back to Trackify</a></p>
+                <!-- CHANGES TO POLICY -->
+                <div class="privacy-section">
+                    <div class="section-header">
+                        <div class="section-number">9</div>
+                        <h2>Changes to This Policy</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>We may update this policy to reflect changes in our practices or legal requirements. If material changes are made, we will update the "Last updated" date in this document.</p>
+                    </div>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="privacy-section">
+                    <div class="section-header">
+                        <div class="section-number">10</div>
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="contact-privacy">
+                            <p>If you have questions about this privacy policy or want to request data deletion, contact us:</p>
+                            <a href="mailto:mahesamun@gmail.com" class="contact-link-privacy">mahesamun@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BACK TO TRACKIFY CTA -->
+                <div class="privacy-cta">
+                    <div class="cta-content">
+                        <h2>Questions About Your Data?</h2>
+                        <p>If you have any concerns about your privacy or how your data is handled, we're here to help. Contact us anytime.</p>
+                        <div class="cta-buttons">
+                            <a href="mailto:mahesamun@gmail.com" class="btn btn-primary">Contact Us</a>
+                            <a href="../trackify.html" class="btn btn-secondary">Back to Trackify</a>
+                            <a href="transactions-deletion.html" class="btn btn-ghost">Delete Transactions</a>
+                            <a href="user-deletion.html" class="btn btn-ghost">Delete Account</a>
+                        </div>
+                    </div>
+                    <div class="cta-image">
+                        <div class="privacy-icon-large">🔒</div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 

@@ -46,68 +46,188 @@
     </div>
 
     <main id="main-content">
-        <section class="container">
-            <div class="featured-project">
-                <div class="featured-project-content">
-                    <h1>Trackify</h1>
-                    <p class="hero-subtitle">Personal Finance Tracker • Privacy-First • Flutter</p>
-                    <p class="featured-project-description">Trackify is a privacy-first personal finance tracker I built with Flutter. It features encrypted local storage, optional Firebase sync, and comprehensive analytics for tracking weekly trends and category breakdowns. The app prioritizes user data security while providing a delightful user experience.</p>
-                    
-                    <h3 style="margin-top: 32px; margin-bottom: 16px;">Key Features</h3>
-                    <ul class="featured-project-features">
-                        <li><strong>Encrypted Local Storage:</strong> All data is encrypted locally on your device</li>
-                        <li><strong>Optional Cloud Sync:</strong> Securely sync your data to Firestore</li>
-                        <li><strong>Multi-Method Tracking:</strong> Track expenses across multiple payment methods</li>
-                        <li><strong>Responsive Charts:</strong> Beautiful, animated charts for expense visualization</li>
-                        <li><strong>Weekly Analytics:</strong> Comprehensive trend analysis and category breakdowns</li>
-                        <li><strong>Accessible Interface:</strong> Built with accessibility best practices</li>
-                    </ul>
-
-                    <h3 style="margin-top: 32px; margin-bottom: 16px;">Project Details</h3>
-                    <ul class="featured-project-features">
-                        <li><strong>Role:</strong> Primary developer — app architecture, storage layer, analytics engine</li>
-                        <li><strong>Status:</strong> Closed-source project; APK available on request</li>
-                        <li><strong>Tech Stack:</strong> Flutter, Dart, Hive (local storage), Firebase (optional sync)</li>
-                    </ul>
-
-                    <h3 style="margin-top: 32px; margin-bottom: 16px;">Download & Testing</h3>
-                    <p style="margin-bottom: 16px;">Download the test APK to try Trackify on your Android device.</p>
-                    <div class="featured-project-buttons">
-                        <a href="trackify-test.apk" download class="btn btn-primary">Download APK</a>
-                        <a href="trackify/privacy-policy.html" class="btn btn-tonal">Privacy Policy</a>
-                    </div>
-
-                    <div style="margin-top: 40px; padding: 24px; background: var(--color-component-outline); border-radius: var(--border-radius-sm); border: 1px solid var(--color-component-outline-hover);">
-                        <p style="font-size: 12px; color: var(--color-text-muted); margin-bottom: 12px;"><strong>APK Information:</strong></p>
-                        <p style="font-size: 14px; font-family: 'Courier New', monospace; word-break: break-all; color: var(--color-text-primary); margin: 0;">
-                            SHA256: <code style="background: rgba(0,0,0,0.2); padding: 4px 8px; border-radius: 4px;">21929921A6A52D0756089566B4B44229021810E12665531A5F3480AE2DA1AD81</code>
-                        </p>
-                        <p style="font-size: 12px; color: var(--color-text-muted); margin: 12px 0 0;">File Size: 25.7 MB</p>
-                    </div>
-                </div>
-                <div class="featured-project-image">
-                    <img src="trackify/trackify.svg" alt="Trackify app preview">
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Trackify</h1>
+                <p class="hero-subtitle">Privacy-First Personal Finance Tracker</p>
+                <p class="hero-description">A comprehensive Flutter app for tracking expenses with encrypted local storage, beautiful analytics, and optional cloud sync. Built with privacy and user experience as top priorities.</p>
+                <div class="hero-buttons">
+                    <a href="trackify-test.apk" download class="btn btn-primary">Download APK</a>
+                    <a href="#features" class="btn btn-ghost">Learn More</a>
                 </div>
             </div>
         </section>
 
-        <section class="container">
-            <h2 style="text-align: center; margin-bottom: 32px; color: var(--color-text-primary);">App Screenshots</h2>
-            <div class="screenshots-grid">
-                <div class="screenshot-item">
-                    <img src="tr (5).jpg" alt="Trackify app screenshot 5" loading="lazy">
+        <!-- SECTION DIVIDER -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">📊</div>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- FEATURES SHOWCASE -->
+        <section class="container" id="features">
+            <div class="features-showcase">
+                <h2 class="section-title">Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-item featured-feature">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm3 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Encrypted Local Storage</h3>
+                            <p>All your financial data is encrypted and stored securely on your device. Your privacy is protected with industry-standard encryption.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 9.5c0 .83-.67 1.5-1.5 1.5S11 13.33 11 12.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5zM5 5h14v4h-14V5zm14 14H5v-8h14v8z"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Optional Cloud Sync</h3>
+                            <p>Choose to sync your data securely to Firebase when needed, or keep everything local for maximum privacy.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Multi-Method Tracking</h3>
+                            <p>Track expenses across multiple payment methods including cash, cards, digital wallets, and bank transfers.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Weekly Analytics</h3>
+                            <p>Comprehensive trend analysis with beautiful, animated charts showing your spending patterns and category breakdowns.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Accessible Interface</h3>
+                            <p>Built with accessibility best practices, ensuring the app is usable by everyone regardless of abilities.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V7h10v2z"/>
+                            </svg>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Category Management</h3>
+                            <p>Organize expenses into custom categories with detailed breakdowns and spending insights.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="screenshot-item">
-                    <img src="tr (4).jpg" alt="Trackify app screenshot 4" loading="lazy">
+
+                <!-- TECH STACK -->
+                <div class="tech-stack-section">
+                    <h2 class="section-title">Technology Stack</h2>
+                    <div class="tech-stack-grid">
+                        <div class="tech-item">
+                            <div class="tech-icon">📱</div>
+                            <h4>Flutter</h4>
+                            <p>Cross-platform mobile development framework</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🎯</div>
+                            <h4>Dart</h4>
+                            <p>Programming language optimized for mobile</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">💾</div>
+                            <h4>Hive</h4>
+                            <p>Lightweight NoSQL database for local storage</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">☁️</div>
+                            <h4>Firebase</h4>
+                            <p>Optional cloud sync and authentication</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">🔐</div>
+                            <h4>Encryption</h4>
+                            <p>AES-256 encryption for data security</p>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">📊</div>
+                            <h4>Charts</h4>
+                            <p>FL Chart library for data visualization</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="screenshot-item">
-                    <img src="tr (3).jpg" alt="Trackify app screenshot 3" loading="lazy">
+
+                <!-- APP SCREENSHOTS -->
+                <div class="screenshots-section">
+                    <h2 class="section-title">App Screenshots</h2>
+                    <div class="screenshots-grid">
+                        <div class="screenshot-item">
+                            <img src="homescreen.jpg" alt="Trackify home screen showing main dashboard" loading="lazy">
+                            <p class="screenshot-caption">Home Screen Dashboard</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="currencyset.jpg" alt="Trackify currency settings screen" loading="lazy">
+                            <p class="screenshot-caption">Currency Settings</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="analytics.jpg" alt="Trackify analytics and charts screen" loading="lazy">
+                            <p class="screenshot-caption">Analytics & Charts</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="settings.jpg" alt="Trackify settings and preferences screen" loading="lazy">
+                            <p class="screenshot-caption">Settings & Preferences</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="transactions.jpg" alt="Trackify transactions list screen" loading="lazy">
+                            <p class="screenshot-caption">Transactions List</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="screenshot-item">
-                    <img src="tr (2).jpg" alt="Trackify app screenshot 2" loading="lazy">
-                </div>
-                <div class="screenshot-item">
-                    <img src="tr (1).jpg" alt="Trackify app screenshot 1" loading="lazy">
+
+                <!-- DOWNLOAD CTA -->
+                <div class="download-cta">
+                    <div class="cta-content">
+                        <h2>Ready to Track Your Finances?</h2>
+                        <p>Download Trackify and start managing your expenses with privacy and ease. Your financial data stays secure and under your control.</p>
+                        <div class="cta-buttons">
+                            <a href="trackify-test.apk" download class="btn btn-primary">Download APK</a>
+                            <a href="trackify/privacy-policy.html" class="btn btn-secondary">Privacy Policy</a>
+                            <a href="trackify/terms-and-conditions.html" class="btn btn-secondary">Terms & Conditions</a>
+                            <a href="trackify/transactions-deletion.html" class="btn btn-ghost">Delete Transactions</a>
+                            <a href="trackify/user-deletion.html" class="btn btn-ghost">Delete Account</a>
+                        </div>
+                        <div class="apk-info">
+                            <p><strong>SHA256:</strong> <code>21929921A6A52D0756089566B4B44229021810E12665531A5F3480AE2DA1AD81</code></p>
+                            <p><strong>File Size:</strong> 25.7 MB</p>
+                        </div>
+                    </div>
+                    <div class="cta-image">
+                        <div class="app-icon">📱</div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -46,43 +46,139 @@
     </div>
 
     <main id="main-content">
-        <section class="container" style="text-align: center;">
-            <h1>Drone Hospital Nepal</h1>
-            <p class="hero-subtitle" style="margin-bottom: 40px;">Repair, Maintenance & Professional Services</p>
-            <p style="max-width: 600px; margin: 0 auto 32px; font-size: 16px; line-height: 1.7;">Drone Hospital Nepal is a comprehensive workshop dedicated to drone repair, maintenance, and pilot training. We provide professional services for drone diagnostics, repairs, and offer certified pilot training programs.</p>
-        </section>
-
-        <section class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="grid grid-3">
-                <div class="card service-card">
-                    <svg class="service-card-icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                    </svg>
-                    <h3>Drone Repair</h3>
-                    <p>Professional diagnosis and repair of drone hardware and electronic components with expert technicians.</p>
-                </div>
-                <div class="card service-card">
-                    <svg class="service-card-icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 9.5c0 .83-.67 1.5-1.5 1.5S11 13.33 11 12.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5zM5 5h14v4h-14V5zm14 14H5v-8h14v8z"/>
-                    </svg>
-                    <h3>Maintenance Services</h3>
-                    <p>Regular maintenance programs to keep your drones in optimal condition and extend their lifespan.</p>
-                </div>
-                <div class="card service-card">
-                    <svg class="service-card-icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
-                    </svg>
-                    <h3>Pilot Training</h3>
-                    <p>Certified professional drone pilot training programs with hands-on experience and certification.</p>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Drone Hospital Nepal</h1>
+                <p class="hero-subtitle">Professional Drone Repair, Maintenance & Pilot Training</p>
+                <p class="hero-description">Your trusted partner for comprehensive drone services in Nepal. From expert repairs and maintenance to certified pilot training programs, we ensure your drone operations run smoothly and safely.</p>
+                <div class="hero-buttons">
+                    <a href="mailto:mahesamun@gmail.com" class="btn btn-primary">Contact Us</a>
+                    <a href="#services" class="btn btn-ghost">Our Services</a>
                 </div>
             </div>
         </section>
 
-        <section class="container" style="text-align: center;">
-            <h2>Contact for Services</h2>
-            <p style="margin-bottom: 24px; color: var(--color-text-muted);">For drone repair, maintenance, consultation, or pilot training inquiries:</p>
-            <a href="mailto:mahesamun@gmail.com" class="btn btn-primary">Get in Touch</a>
+        <!-- SECTION DIVIDER -->
+        <div class="section-divider">
+            <div class="divider-line"></div>
+            <div class="divider-icon">🛩️</div>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- SERVICES SHOWCASE -->
+        <section class="container" id="services">
+            <div class="services-showcase">
+                <!-- SERVICE CARDS GRID -->
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-item featured-service">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="service-content">
+                            <h3>Drone Repair Services</h3>
+                            <p>Expert diagnosis and repair of all drone models including DJI, Parrot, and custom builds. Our certified technicians handle hardware failures, electronic component repairs, and firmware issues.</p>
+                            <ul class="service-features">
+                                <li>Hardware diagnostics & repair</li>
+                                <li>Electronic component replacement</li>
+                                <li>Firmware updates & calibration</li>
+                                <li>Propeller & motor replacement</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 9.5c0 .83-.67 1.5-1.5 1.5S11 13.33 11 12.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5zM5 5h14v4h-14V5zm14 14H5v-8h14v8z"/>
+                            </svg>
+                        </div>
+                        <div class="service-content">
+                            <h3>Preventive Maintenance</h3>
+                            <p>Comprehensive maintenance programs to keep your drones performing at peak efficiency. Regular check-ups, cleaning, and optimization to extend drone lifespan and ensure safety.</p>
+                            <ul class="service-features">
+                                <li>Regular performance check-ups</li>
+                                <li>Cleaning & calibration services</li>
+                                <li>Battery health monitoring</li>
+                                <li>Software optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                            </svg>
+                        </div>
+                        <div class="service-content">
+                            <h3>Professional Pilot Training</h3>
+                            <p>Certified drone pilot training programs designed for beginners and professionals. Learn safe operation, regulations, and advanced flight techniques with hands-on experience.</p>
+                            <ul class="service-features">
+                                <li>Beginner to advanced courses</li>
+                                <li>CAAN certification preparation</li>
+                                <li>Practical flight training</li>
+                                <li>Safety & regulations training</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WHY CHOOSE US -->
+                <div class="why-choose-us">
+                    <h2 class="section-title">Why Choose Drone Hospital Nepal?</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🛠️</div>
+                            <h4>Expert Technicians</h4>
+                            <p>Certified professionals with years of experience in drone repair and maintenance.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">⚡</div>
+                            <h4>Quick Turnaround</h4>
+                            <p>Fast diagnosis and repair services to minimize your drone downtime.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🛡️</div>
+                            <h4>Genuine Parts</h4>
+                            <p>We use only authentic, high-quality parts for all repairs and replacements.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📜</div>
+                            <h4>Certified Training</h4>
+                            <p>CAAN-recognized pilot training programs with official certification.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">📞</div>
+                            <h4>24/7 Support</h4>
+                            <p>Round-the-clock technical support and consultation services.</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🇳🇵</div>
+                            <h4>Nepal's First</h4>
+                            <p>Pioneering comprehensive drone services in Nepal since establishment.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTACT CTA -->
+                <div class="contact-cta">
+                    <div class="cta-content">
+                        <h2>Ready to Get Your Drone Fixed?</h2>
+                        <p>Get professional repair, maintenance, or training services for your drone. Contact us today for a free consultation.</p>
+                        <div class="cta-buttons">
+                            <a href="mailto:contact@dronehospitalnepal.com" class="btn btn-primary">Email Us</a>
+                            <a href="tel:+977-9863228435" class="btn btn-secondary">Call Now</a>
+                        </div>
+                    </div>
+                    <div class="cta-image">
+                        <div class="drone-icon">🚁</div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 

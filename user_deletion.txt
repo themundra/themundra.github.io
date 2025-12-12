@@ -1,0 +1,33 @@
+User Account Deletion for Trackify
+
+Trackify is a personal finance tracking app developed by [Your Developer Name or Company]. If you wish to delete your account and all associated data, follow the steps below. Account deletion is permanent and cannot be undone after the grace period.
+
+Steps to Request Account Deletion:
+1. Open the Trackify app on your device.
+2. Navigate to the Settings screen (accessible from the main menu or profile section).
+3. Scroll to the "Support & About" section.
+4. Tap on "Delete Account".
+5. Read the confirmation dialog carefully, which explains the 7-day grace period.
+6. Confirm the deletion request by tapping "Request Deletion".
+
+What Happens After Requesting Deletion:
+- Your account will be marked for deletion, and you will be logged out immediately.
+- All local data on your device (e.g., cached transactions) will be cleared right away.
+- You have a 7-day grace period to cancel the deletion by logging back into the app. If you log in within 7 days, the deletion request will be canceled, and your data will be restored.
+- After 7 days, if not canceled, your account and all associated data will be permanently deleted from our servers.
+
+Types of Data Deleted:
+- User profile information (name, email, etc.).
+- All transaction records (payments, deposits, loans).
+- Any other user-generated content stored in the app.
+
+Data Retained:
+- No personal data is retained after permanent deletion.
+- During the 7-day grace period, data remains on our servers but is inaccessible until canceled.
+
+Additional Notes:
+- Deletion requests are processed securely and in compliance with privacy regulations.
+- If you encounter issues or need assistance, contact us at [your contact email or support link].
+- This process ensures your data privacy while allowing a brief window for reconsideration.
+
+Last updated: [Insert Date]
