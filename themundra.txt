@@ -1,0 +1,559 @@
+================================================================================
+SAMUNDRA MAHESH PORTFOLIO - STATIC HTML/CSS/JS WEBSITE
+Complete Specification & Content
+================================================================================
+
+PROJECT OVERVIEW:
+Professional portfolio website for Samundra Mahesh - Flutter Developer, UI/UX Designer, and Founder of Drone Hospital Nepal. Modern, responsive design with smooth animations and clean typography.
+
+================================================================================
+COLOR SCHEME & DESIGN TOKENS:
+================================================================================
+
+Primary Colors:
+- Primary Blue: #8ab4f8
+- Light Cyan: #7be0ff
+- Gold/Yellow: #ffd166
+
+Background Colors:
+- Dark Background: #071022
+- Surface Background: #0f1724
+- Elevated Surface: #0f1724
+
+Text Colors:
+- Primary Text: #e6eef6
+- Muted Text: #9aa4b2
+- Outline/Border: rgba(255, 255, 255, 0.06)
+
+Component Styling:
+- Component Outline: rgba(138, 180, 248, 0.04)
+- Component Outline Hover: rgba(138, 180, 248, 0.12)
+- Border Radius: 12px, 14px, 16px
+
+Shadows:
+- Elevation 1: 0 6px 12px rgba(2, 6, 23, 0.6)
+- Elevation 2: 0 12px 28px rgba(2, 6, 23, 0.65)
+
+Typography:
+- Font Family: Poppins (300, 400, 500, 700 weights)
+- Import: https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap
+- Display Large: 57px
+- Display Medium: 45px
+- Display Small: 36px
+- Headline Large: 32px
+- Headline Medium: 28px
+- Title Large: 22px
+- Label Large: 14px
+- Line Height: 1.5
+
+================================================================================
+NAVIGATION STRUCTURE:
+================================================================================
+
+Main Navigation Items:
+1. Home (/)
+2. Projects (/projects)
+3. Drone Hospital (/drone-hospital)
+4. Trackify (/trackify)
+5. Contact (/contact)
+
+Desktop Navigation:
+- Fixed header with brand logo on left
+- Horizontal navigation links on right
+- Active state highlighting
+- Smooth hover transitions
+- Logo: "S(amundra) M(ahesh)" with S in cyan, M in gold
+
+Mobile Navigation:
+- Hamburger menu icon in top-right
+- Left-sliding drawer menu that slides in from left side
+- "Menu" header with close button (X)
+- Full-width navigation links
+- Backdrop overlay that closes menu on click
+- Navigation links close menu after clicking
+- Active link highlighting
+- Smooth slide-in animation (0.28s cubic-bezier)
+
+================================================================================
+PAGE STRUCTURE & CONTENT:
+================================================================================
+
+HEADER / NAVIGATION BAR:
+- Fixed positioning, sticky to top
+- Height: 64px
+- Background: Surface with bottom border
+- Responsive: Nav links hidden on mobile (<720px), hamburger menu shown
+- Contains: Brand logo, navigation links, mobile menu toggle
+- Z-index: 20
+- Shadow elevation-1
+
+HOME PAGE (Index):
+---------
+Hero Section:
+  - Decorative blob background (animated circles with blur effect)
+  - Positioned fixed, behind main content
+  - Two circles: #8ab4f8 and #7be0ff with blur(60px) and opacity 0.18
+  
+Hero Content:
+  - Heading: "Hi — I'm [Samundra Mahesh]" (name in gradient)
+  - Subheading: "Flutter app developer • UI/UX designer • Founder, Drone Hospital Nepal"
+  - Lead paragraph: "I design and build polished mobile experiences with Flutter, focusing on performance, delightful micro-interactions, and accessible interfaces. I also run Drone Hospital Nepal — a workshop for drone repair, maintenance and pilot training."
+  
+Call-to-Action Buttons:
+  - Primary Button: "View Projects" (links to /projects)
+  - Secondary Button: "Drone Services" (links to /drone-hospital)
+  
+Skills/Services Cards (3-column grid on desktop, stacked on mobile):
+  1. Flutter • Mobile
+     Icon: Code brackets
+     Description: "Apps with clean architecture"
+  
+  2. UI / UX
+     Icon: Design brush
+     Description: "Figma, prototypes & NDA-ready case studies"
+  
+  3. Drone Hospital
+     Icon: Drone/helicopter
+     Description: "Repair, maintenance & consultation"
+
+Profile Card (Right sidebar on desktop, below cards on mobile):
+  - Avatar image: /samahesh.png
+  - Name: Samundra Mahesh
+  - Title: Flutter Developer & UI/UX Designer
+  - Text: "View my profiles below. Resume is available on request."
+  - Links: GitHub (https://github.com/themundra), LinkedIn (https://www.linkedin.com/in/themundra/)
+  - Fallback: Initials "MD" in circle if image fails
+  - Border: 1px solid component-outline
+  - Border-radius: 12px
+  - Padding: 16px
+
+Projects Section:
+  Title: "Selected Projects"
+  
+  Featured Project (Trackify):
+  - Layout: Two-column (text left, image right on desktop)
+  - Heading: "Trackify — Personal Finance (Flutter)"
+  - Description: "Trackify is a privacy-first finance tracker I built with Flutter: encrypted local storage, optional Firestore sync, and concise analytics for weekly trends and category breakdowns."
+  - Key Features List:
+    * Role: Primary developer — app, storage, analytics
+    * Key features: Encrypted local store, multi-method balances, responsive charts
+    * Status: Closed-source; APK available on request
+  - Buttons:
+    * Primary: "View Case Study" (links to /trackify)
+    * Tonal: "Request APK" (mailto: mahesamun@gmail.com?subject=Trackify%20Test%20APK)
+  - Image: /trackify/trackify.svg (height: 140px)
+
+Projects Grid (3 columns on desktop, responsive):
+  1. Trackify Card
+     - Image: /trackify/trackify.svg
+     - Link: /trackify
+     - Title: Trackify
+     - Description: "Privacy-first finance tracker with encrypted local storage and analytics."
+  
+  2. falanocollege.com Card
+     - Placeholder: Gradient background with text overlay
+     - Link: https://falanocollege.com (target: _blank)
+     - Title: falanocollege.com
+     - Description: "An educational resource portal providing curated study material: notes, updated syllabi, practice questions and previous years' papers — supporting Science, Management, Humanities and Law courses."
+  
+  3. CourierDirect Card
+     - Image: /projects/drone-manager.jpg
+     - Link: https://courierdirect.com (target: _blank)
+     - Title: CourierDirect
+     - Description: "Delivery management app — routing, parcel tracking and driver tools."
+
+FOOTER:
+  - Centered text
+  - "© [YEAR] Samundra Mahesh — Flutter Developer & UI/UX Designer — Founder, Drone Hospital Nepal"
+  - Dynamic year using JavaScript: new Date().getFullYear()
+  - Background: Page background color
+  - Padding: 20px
+
+================================================================================
+PROJECTS PAGE (/projects):
+================================================================================
+
+Page Title: "Projects — Samundra Mahesh"
+
+Content:
+  - Grid of project cards (similar to home page projects section)
+  - Featured projects with detailed descriptions
+  - Links to external projects and case studies
+  - Card layout with hover effects
+  - Images and project metadata
+
+================================================================================
+DRONE HOSPITAL PAGE (/drone-hospital):
+================================================================================
+
+Page Title: "Drone Hospital Nepal — Repair, Maintenance & Services"
+
+Content:
+  - Overview of Drone Hospital Nepal services
+  - Service offerings:
+    * Drone Repair & Maintenance
+    * Drone Pilot Training
+    * Drone Consultation Services
+  - About the workshop
+  - Contact information for drone services
+  - Service cards with descriptions
+
+================================================================================
+TRACKIFY PAGE (/trackify):
+================================================================================
+
+Page Title: "Trackify — Personal Finance Tracker"
+
+Content:
+  - Case study for Trackify app
+  - App features and functionality:
+    * Encrypted local storage
+    * Optional Firestore sync
+    * Weekly trend analytics
+    * Category breakdowns
+    * Multi-method balance tracking
+    * Responsive charts
+  - Design approach
+  - Technical implementation details
+  - Screenshots/images: /trackify/trackify.svg
+  - APK request button/link
+  - Privacy policy link: /trackify/privacy-policy
+
+Trackify Privacy Policy Page (/trackify/privacy-policy):
+  - Privacy policy content for Trackify app
+  - Data encryption details
+  - User data handling
+  - Local storage information
+
+================================================================================
+CONTACT PAGE (/contact):
+================================================================================
+
+Page Title: "Contact — Samundra Mahesh"
+
+Content:
+  - Contact form or contact information
+  - Email: mahesamun@gmail.com
+  - Links to social profiles
+  - Available for collaborations, consultations, and project inquiries
+
+================================================================================
+RESPONSIVE DESIGN BREAKPOINTS:
+================================================================================
+
+Desktop: 1200px and above
+- Two-column layouts where applicable
+- Full navigation bar
+- Expanded hero section
+- 3-column project grids
+
+Tablet: 720px - 1199px
+- Adjusted spacing
+- 2-column layouts
+- Simplified hero
+- 2-column project grids
+
+Mobile: Below 720px (<720px)
+- Single column layout
+- Hidden desktop navigation (.links display: none)
+- Hamburger menu shown (.menu-toggle display: inline-flex)
+- Stacked cards and content
+- Left-sliding mobile drawer menu
+- 1-column project grids
+- Reduced padding and margins
+- Optimized touch targets (48px minimum height)
+
+================================================================================
+INTERACTIVE ELEMENTS & ANIMATIONS:
+================================================================================
+
+Navigation Animations:
+- Link hover: Color change to primary, background rgba highlight, border transition (0.12s ease)
+- Mobile menu toggle: Icon changes from hamburger to X when open
+- Drawer slide-in: transform translateX(-110%) to 0 (0.28s cubic-bezier(0.2, 0.9, 0.2, 1))
+
+Button Styles:
+- Primary Button (btn-primary):
+  Background: Primary blue (#8ab4f8)
+  Color: Dark text
+  Hover: Darker background with shadow elevation-1
+  Padding: 12px 24px
+  Border-radius: 12px
+  Font-weight: 600
+  Transition: 0.12s ease
+
+- Ghost Button (btn-ghost):
+  Background: Transparent
+  Border: 1px solid outline
+  Color: Primary text
+  Hover: Background rgba, border darker
+  Similar padding and radius
+
+- Tonal Button (btn-tonal):
+  Background: rgba(138, 180, 248, 0.12)
+  Border: 1px solid outline
+  Color: Primary text
+  Hover: More opaque background
+
+Card Animations:
+- Hover: Subtle lift effect with elevation shadow
+- Transition: box-shadow 0.12s ease, transform 0.12s ease
+- Active project cards show highlight
+
+Form Elements (Contact form if applicable):
+- Input fields with border-radius: 12px
+- Focus state: Blue outline, shadow elevation
+- Placeholder text in muted color
+
+Skip-Link:
+- Accessible skip-to-content link
+- Positioned absolutely, off-screen by default
+- transform translateY(-140%)
+- On focus: transform translateY(0) with elevation shadow
+- Z-index: 60
+
+================================================================================
+COMPONENT DETAILS:
+================================================================================
+
+Card Component:
+- Background: linear-gradient with rgba(255,255,255,0.015) to rgba(255,255,255,0.01)
+- Border: 1px solid component-outline
+- Border-radius: 12px
+- Padding: 16px
+- Backdrop-filter: blur(20px) (optional for glass effect)
+- Hover: elevation-2 shadow, border-color shift to component-outline-hover
+- Transition: all 0.12s ease
+
+Link/Anchor Tags:
+- Color: Primary text or primary blue (for links)
+- Text-decoration: none
+- Hover: Color primary blue
+- Active state: Stronger color and shadow
+
+Image Loading:
+- Lazy loading if possible
+- Fallback for missing images (e.g., avatar fallback to initials)
+- Responsive image sizing using object-fit
+- Error handlers to hide broken images
+
+================================================================================
+ADDITIONAL FEATURES:
+================================================================================
+
+Accessibility:
+- Skip-to-content link
+- Semantic HTML (nav, main, footer, section, etc.)
+- ARIA labels for mobile menu and interactive elements
+- Focus states for keyboard navigation
+- Alt text for all images
+- Role attributes for dialog/modals
+- aria-current="page" for active navigation links
+- aria-hidden for decorative elements
+- aria-expanded for menu toggle state
+- aria-modal for drawer dialog
+
+SEO Meta Tags:
+- Title: "Samundra Mahesh — Flutter Developer & UI/UX Designer"
+- Meta charset: UTF-8
+- Meta viewport: width=device-width
+- Meta description: Professional portfolio of Samundra Mahesh, Flutter Developer and UI/UX Designer
+- Favicon (optional): /favicon-trans.svg
+
+Performance:
+- CSS minification
+- Lazy loading for images
+- Optimized font loading (font-display: swap)
+- Minimal JavaScript for interactivity
+- CSS transitions instead of animations where possible
+
+Dark Mode:
+- Entire site uses dark theme by default
+- All colors optimized for dark backgrounds
+- High contrast for readability
+- No light mode toggle (single theme)
+
+================================================================================
+FILE STRUCTURE (Static HTML Version):
+================================================================================
+
+index.html              - Home page
+projects.html          - Projects page
+drone-hospital.html    - Drone Hospital page
+trackify.html          - Trackify case study page
+contact.html           - Contact page
+about.html             - About page (optional)
+css/
+  styles.css           - All styling (consolidated)
+js/
+  main.js              - Mobile menu toggle and interactivity
+  smooth-scroll.js     - Smooth scrolling (optional)
+img/
+  samahesh.png         - Avatar image
+  trackify.svg         - Trackify logo/mockup
+  drone-manager.jpg    - Project thumbnail
+assets/
+  fonts/               - Local font files (if not using Google Fonts CDN)
+
+================================================================================
+JAVASCRIPT FUNCTIONALITY:
+================================================================================
+
+Mobile Menu Toggle:
+- Click hamburger button to toggle drawer open/close state
+- Click menu link to close drawer and navigate
+- Click backdrop to close drawer
+- ESC key to close drawer (optional enhancement)
+- Prevent scroll when drawer is open (optional)
+
+Active Link Highlighting:
+- Compare current URL with navigation links
+- Add 'active' class to matching link
+- Update aria-current="page" attribute
+
+Form Submission (Contact form):
+- Form validation
+- Error handling and display
+- Success message on submission
+- Optional: Send via email service or API
+
+Image Error Handling:
+- Listen for image load errors
+- Replace with fallback (avatar initials)
+- Hide broken images gracefully
+
+Smooth Scrolling:
+- Smooth scroll behavior for anchor links
+- Scroll-behavior: smooth in CSS
+- Navigation to page sections
+
+================================================================================
+CONTENT DETAILS (Text):
+================================================================================
+
+SITE NAME: Samundra Mahesh
+
+BRAND STATEMENT:
+"I design and build polished mobile experiences with Flutter, focusing on performance, delightful micro-interactions, and accessible interfaces. I also run Drone Hospital Nepal — a workshop for drone repair, maintenance and pilot training."
+
+TAGLINE:
+"Flutter Developer • UI/UX Designer • Founder, Drone Hospital Nepal"
+
+KEY SKILLS:
+- Flutter Mobile Development (Clean Architecture)
+- UI/UX Design (Figma, Prototypes)
+- Drone Repair & Maintenance
+- Pilot Training
+- App Design & Development
+- Performance Optimization
+- Accessible Interface Design
+
+PROJECTS:
+
+1. TRACKIFY - Personal Finance Tracker
+   Type: Flutter Mobile App
+   Description: A privacy-first finance tracker with encrypted local storage, optional Firestore sync, and analytics
+   Features:
+   - Encrypted Local Storage
+   - Optional Firestore Sync
+   - Weekly Trend Analytics
+   - Category Breakdowns
+   - Multi-Method Balance Tracking
+   - Responsive Charts
+   Status: Closed-source, APK available on request
+   Contact: mahesamun@gmail.com
+
+2. FALANOCOLLEGE.COM
+   Type: Educational Web Portal
+   Description: Educational resource portal with curated study materials for students
+   Features:
+   - Notes & Syllabi
+   - Practice Questions
+   - Previous Years' Papers
+   - Support for Science, Management, Humanities, Law
+   Link: https://falanocollege.com
+
+3. COURIERDIRECT
+   Type: Delivery Management App
+   Description: Delivery and routing management application with tracking features
+   Features:
+   - Route Optimization
+   - Parcel Tracking
+   - Driver Tools
+   Link: https://courierdirect.com
+
+DRONE HOSPITAL NEPAL:
+Description: Workshop for drone repair, maintenance, and pilot training
+Services:
+- Drone Repair & Maintenance
+- Professional Pilot Training
+- Drone Consultation Services
+- Technical Support
+Location: Nepal
+
+CONTACT INFORMATION:
+- Email: mahesamun@gmail.com
+- GitHub: https://github.com/themundra
+- LinkedIn: https://www.linkedin.com/in/themundra/
+- Resume: Available on request
+
+SOCIAL LINKS:
+- GitHub: https://github.com/themundra
+- LinkedIn: https://www.linkedin.com/in/themundra/
+
+================================================================================
+DESIGN PRINCIPLES:
+================================================================================
+
+1. Minimalist & Clean: Remove clutter, focus on content
+2. Dark Theme: Modern, easy on eyes, professional appearance
+3. Responsive: Mobile-first design approach
+4. Accessible: Keyboard navigation, semantic HTML, ARIA labels
+5. Performance: Fast loading, optimized assets
+6. Typography-Focused: Clean fonts, good hierarchy
+7. Subtle Animations: Smooth transitions without distracting
+8. Micro-Interactions: Hover states, active states, feedback
+9. Consistency: Unified color scheme, spacing, sizing
+10. Accessibility First: High contrast, readable text, accessible navigation
+
+================================================================================
+DEVELOPMENT NOTES:
+================================================================================
+
+- Use semantic HTML5 elements
+- CSS Grid or Flexbox for layouts
+- CSS variables for theming and consistency
+- Mobile-first CSS approach (base styles mobile, then media queries for larger screens)
+- Vanilla JavaScript (no framework required for static HTML version)
+- Google Fonts for typography
+- Inline SVG for icons (no external icon library needed)
+- Optimize images (use SVG where possible, compress JPG/PNG)
+- Test on multiple browsers and devices
+- Validate HTML and CSS
+- Check accessibility with WAVE or similar tools
+- Implement proper SEO meta tags
+- Use CSS transitions for smooth animations
+
+================================================================================
+OPTIONAL ENHANCEMENTS:
+================================================================================
+
+1. Dark/Light Theme Toggle
+2. Smooth scroll behavior
+3. Lazy loading images
+4. Form validation with JavaScript
+5. Contact form backend integration
+6. Blog/Articles section
+7. Testimonials section
+8. Case study modal/popup
+9. Download resume button
+10. Animation on scroll effects
+11. Search functionality
+12. Newsletter signup
+13. Analytics integration (Google Analytics)
+14. Social sharing buttons
+15. Comments section
+
+================================================================================
+END OF SPECIFICATION
+================================================================================

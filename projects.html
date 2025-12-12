@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Samundra Mahesh — Flutter apps, web platforms, and delivery systems.">
+    <title>Projects — Samundra Mahesh</title>
+    <link rel="icon" href="favicon-trans.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <a href="index.html" class="nav-brand">
+            <span class="s">S</span><span class="m">M</span>
+        </a>
+        <nav class="desktop">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="drone-hospital.html">Drone Hospital</a>
+            <a href="trackify.html">Trackify</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="mobile-backdrop"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2>Menu</h2>
+            <button class="mobile-menu-close" aria-label="Close menu">&times;</button>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="drone-hospital.html">Drone Hospital</a>
+            <a href="trackify.html">Trackify</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <main id="main-content">
+        <section class="container">
+            <h1 style="text-align: center; margin-bottom: 40px;">Projects</h1>
+            
+            <div class="grid grid-3">
+                <a href="trackify.html" class="project-card">
+                    <div class="project-card-image">
+                        <img src="trackify/trackify.svg" alt="Trackify">
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Trackify</h3>
+                        <p>Privacy-first personal finance tracker built with Flutter. Features encrypted local storage, optional Firestore sync, and weekly trend analytics.</p>
+                    </div>
+                </a>
+
+                <a href="https://falanocollege.com" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-card-image" style="background: linear-gradient(135deg, #ffd166 0%, #8ab4f8 100%); font-size: 32px; font-weight: 700;">
+                        FC
+                    </div>
+                    <div class="project-card-content">
+                        <h3>falanocollege.com</h3>
+                        <p>Educational resource portal providing curated study materials: notes, updated syllabi, practice questions and previous years' papers for multiple disciplines.</p>
+                    </div>
+                </a>
+
+                <a href="https://courierdirect.com" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="project-card-image">
+                        📦
+                    </div>
+                    <div class="project-card-content">
+                        <h3>CourierDirect</h3>
+                        <p>Delivery management application featuring route optimization, real-time parcel tracking, and comprehensive driver management tools.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Samundra Mahesh — Flutter Developer & UI/UX Designer — Founder, Drone Hospital Nepal</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

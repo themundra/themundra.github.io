@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trackify — A privacy-first personal finance tracker built with Flutter.">
+    <title>Trackify — Personal Finance Tracker Case Study</title>
+    <link rel="icon" href="favicon-trans.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <a href="index.html" class="nav-brand">
+            <span class="s">S</span><span class="m">M</span>
+        </a>
+        <nav class="desktop">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="drone-hospital.html">Drone Hospital</a>
+            <a href="trackify.html">Trackify</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="mobile-backdrop"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2>Menu</h2>
+            <button class="mobile-menu-close" aria-label="Close menu">&times;</button>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="drone-hospital.html">Drone Hospital</a>
+            <a href="trackify.html">Trackify</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <main id="main-content">
+        <section class="container">
+            <div class="featured-project">
+                <div class="featured-project-content">
+                    <h1>Trackify</h1>
+                    <p class="hero-subtitle">Personal Finance Tracker • Privacy-First • Flutter</p>
+                    <p class="featured-project-description">Trackify is a privacy-first personal finance tracker I built with Flutter. It features encrypted local storage, optional Firebase sync, and comprehensive analytics for tracking weekly trends and category breakdowns. The app prioritizes user data security while providing a delightful user experience.</p>
+                    
+                    <h3 style="margin-top: 32px; margin-bottom: 16px;">Key Features</h3>
+                    <ul class="featured-project-features">
+                        <li><strong>Encrypted Local Storage:</strong> All data is encrypted locally on your device</li>
+                        <li><strong>Optional Cloud Sync:</strong> Securely sync your data to Firestore</li>
+                        <li><strong>Multi-Method Tracking:</strong> Track expenses across multiple payment methods</li>
+                        <li><strong>Responsive Charts:</strong> Beautiful, animated charts for expense visualization</li>
+                        <li><strong>Weekly Analytics:</strong> Comprehensive trend analysis and category breakdowns</li>
+                        <li><strong>Accessible Interface:</strong> Built with accessibility best practices</li>
+                    </ul>
+
+                    <h3 style="margin-top: 32px; margin-bottom: 16px;">Project Details</h3>
+                    <ul class="featured-project-features">
+                        <li><strong>Role:</strong> Primary developer — app architecture, storage layer, analytics engine</li>
+                        <li><strong>Status:</strong> Closed-source project; APK available on request</li>
+                        <li><strong>Tech Stack:</strong> Flutter, Dart, Hive (local storage), Firebase (optional sync)</li>
+                    </ul>
+
+                    <h3 style="margin-top: 32px; margin-bottom: 16px;">Download & Testing</h3>
+                    <p style="margin-bottom: 16px;">Download the test APK to try Trackify on your Android device.</p>
+                    <div class="featured-project-buttons">
+                        <a href="trackify-test.apk" download class="btn btn-primary">Download APK</a>
+                        <a href="trackify/privacy-policy.html" class="btn btn-tonal">Privacy Policy</a>
+                    </div>
+
+                    <div style="margin-top: 40px; padding: 24px; background: var(--color-component-outline); border-radius: var(--border-radius-sm); border: 1px solid var(--color-component-outline-hover);">
+                        <p style="font-size: 12px; color: var(--color-text-muted); margin-bottom: 12px;"><strong>APK Information:</strong></p>
+                        <p style="font-size: 14px; font-family: 'Courier New', monospace; word-break: break-all; color: var(--color-text-primary); margin: 0;">
+                            SHA256: <code style="background: rgba(0,0,0,0.2); padding: 4px 8px; border-radius: 4px;">21929921A6A52D0756089566B4B44229021810E12665531A5F3480AE2DA1AD81</code>
+                        </p>
+                        <p style="font-size: 12px; color: var(--color-text-muted); margin: 12px 0 0;">File Size: 25.7 MB</p>
+                    </div>
+                </div>
+                <div class="featured-project-image">
+                    <img src="trackify/trackify.svg" alt="Trackify app preview">
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 style="text-align: center; margin-bottom: 32px; color: var(--color-text-primary);">App Screenshots</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-item">
+                    <img src="tr (5).jpg" alt="Trackify app screenshot 5" loading="lazy">
+                </div>
+                <div class="screenshot-item">
+                    <img src="tr (4).jpg" alt="Trackify app screenshot 4" loading="lazy">
+                </div>
+                <div class="screenshot-item">
+                    <img src="tr (3).jpg" alt="Trackify app screenshot 3" loading="lazy">
+                </div>
+                <div class="screenshot-item">
+                    <img src="tr (2).jpg" alt="Trackify app screenshot 2" loading="lazy">
+                </div>
+                <div class="screenshot-item">
+                    <img src="tr (1).jpg" alt="Trackify app screenshot 1" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Samundra Mahesh — Flutter Developer & UI/UX Designer — Founder, Drone Hospital Nepal</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

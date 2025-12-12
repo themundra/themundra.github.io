@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Drone Hospital Nepal — Repair, maintenance, and pilot training services.">
+    <title>Drone Hospital Nepal — Services & Consultation</title>
+    <link rel="icon" href="favicon-trans.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <a href="index.html" class="nav-brand">
+            <span class="s">S</span><span class="m">M</span>
+        </a>
+        <nav class="desktop">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="drone-hospital.html">Drone Hospital</a>
+            <a href="trackify.html">Trackify</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="mobile-backdrop"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2>Menu</h2>
+            <button class="mobile-menu-close" aria-label="Close menu">&times;</button>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="drone-hospital.html">Drone Hospital</a>
+            <a href="trackify.html">Trackify</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <main id="main-content">
+        <section class="container" style="text-align: center;">
+            <h1>Drone Hospital Nepal</h1>
+            <p class="hero-subtitle" style="margin-bottom: 40px;">Repair, Maintenance & Professional Services</p>
+            <p style="max-width: 600px; margin: 0 auto 32px; font-size: 16px; line-height: 1.7;">Drone Hospital Nepal is a comprehensive workshop dedicated to drone repair, maintenance, and pilot training. We provide professional services for drone diagnostics, repairs, and offer certified pilot training programs.</p>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="grid grid-3">
+                <div class="card service-card">
+                    <svg class="service-card-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                    <h3>Drone Repair</h3>
+                    <p>Professional diagnosis and repair of drone hardware and electronic components with expert technicians.</p>
+                </div>
+                <div class="card service-card">
+                    <svg class="service-card-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 9.5c0 .83-.67 1.5-1.5 1.5S11 13.33 11 12.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5zM5 5h14v4h-14V5zm14 14H5v-8h14v8z"/>
+                    </svg>
+                    <h3>Maintenance Services</h3>
+                    <p>Regular maintenance programs to keep your drones in optimal condition and extend their lifespan.</p>
+                </div>
+                <div class="card service-card">
+                    <svg class="service-card-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                    </svg>
+                    <h3>Pilot Training</h3>
+                    <p>Certified professional drone pilot training programs with hands-on experience and certification.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="text-align: center;">
+            <h2>Contact for Services</h2>
+            <p style="margin-bottom: 24px; color: var(--color-text-muted);">For drone repair, maintenance, consultation, or pilot training inquiries:</p>
+            <a href="mailto:mahesamun@gmail.com" class="btn btn-primary">Get in Touch</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Samundra Mahesh — Flutter Developer & UI/UX Designer — Founder, Drone Hospital Nepal</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
